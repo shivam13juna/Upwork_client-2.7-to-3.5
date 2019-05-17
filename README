@@ -1,0 +1,30 @@
+
+
+Back propagation is a learning method for feed-forward multilayer neural network.
+where:
+
+a neural network is a collection of interconnected neurons, each neuron
+has an associated state, and a set of inputs, and one output.
+
+multilayer is the categorization of each neuron to a specific layer in
+ever increasing order from the input to the output layer, and any hidden
+layer in between.
+
+feed-forward is the constraint that the neurons cannot be connected to themselves
+and their outputs are directly connected to a higher level and their inputs
+are coming from a lower layer.
+
+learning method is the process in which we update our weights, their adjustment
+dictates how much we have learned from our current input set.
+
+Each neuron has the following state:
+learning_rate, globally set.
+activation_function, globally_set,
+    for simplicity we will take the sigmoid function 1/(1 + exp(-x))
+
+an input set, containing all the inputs from the previous layer,
+and a weight for each input, initially random.
+
+an output value z, sigmoid(dot_product(input_set, weights))
+
+lets
